@@ -6,12 +6,10 @@ const todoList = () => {
   const markAsComplete = (index) => {
     all[index].completed = true;
   };
-
-  const overdue = () => {
+ const overdue = () => {
     return all.filter((todo)     => todo.dueDate < today);
   };
-
-  const dueToday = () => {
+ const dueToday = () => {
     return all.filter((todo)    => todo.dueDate == today);
   };
 
